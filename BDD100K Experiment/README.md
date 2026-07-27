@@ -42,6 +42,20 @@ robustification scripts. Use both repositories to obtain the complete pipeline
 from data preparation and baseline training through robustification and robust
 evaluation.
 
+
+
+For the black-box attack implementations and their supporting evaluation
+dependencies, refer to the [attack-evaluation
+repository](https://github.com/badjie90/Router-Sentinel-Securing-Routed-MoE-at-the-Routing-Stage-Against-Black-box-Adversarial-Attacks.git).
+That repository provides the decision-based, score-based, and transfer-based
+attack logic used to test whether robustification improves the MoE router under
+adversarial conditions. Access to those scripts is important for reproducing
+the complete defense-evaluation workflow, including the generation of adversarial
+inputs, router-attack measurements, and comparisons between the original and
+robustified models. Accordingly, this robustification repository should be used
+together with both the baseline repository and the attack-evaluation repository
+when reproducing the full experimental pipeline.
+
 ## Prerequisites from the baseline repository
 
 Complete baseline metadata preparation and model training before using this
