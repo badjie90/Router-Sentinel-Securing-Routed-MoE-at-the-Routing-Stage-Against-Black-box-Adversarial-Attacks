@@ -29,6 +29,19 @@ mechanism intended to identify or handle unreliable routing under attack.
 - The baseline train and test scripts provide the imported architecture,
   dataset, and metric helpers required by the robustification scripts.
 
+
+## Required baseline assets
+
+For the initial model training, testing, and data-preprocessing implementation,
+refer to the [baseline CSA-GMoE
+repository](https://github.com/badjie90/CSA-GMoE-Context-Aware-Multi-Label-Object-Presence-Prediction-in-Autonomous-Driving.git).
+Those baseline scripts are essential dependencies of this project: they define
+the model architecture, prepare the reproducible metadata splits, train the
+original MoE checkpoint, and provide evaluation utilities imported by the
+robustification scripts. Use both repositories to obtain the complete pipeline
+from data preparation and baseline training through robustification and robust
+evaluation.
+
 ## Prerequisites from the baseline repository
 
 Complete baseline metadata preparation and model training before using this
